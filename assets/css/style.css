@@ -1,0 +1,542 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box
+}
+body{
+	overflow-x:hidden;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Oxanium', cursive;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Thin.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-SemiBold.ttf);
+    font-weight: 600;
+}
+:root{
+	--money-bg:rgba(1, 68, 94, 1);
+	--white-:#ffffff;
+	--p-text:rgba(255, 255, 255, 1);
+	--b-text:rgba(241, 241, 241, 1);
+	--green--:rgba(59, 183, 126, 1);
+	--red--:rgba(206, 4, 4, 1);
+	--black-:rgba(0, 0, 0, 1);
+	--header-bg:rgba(17, 44, 45);
+	--header-color: rgba(255, 255, 255, 0.6);
+	--red-:#E50E0E;
+	--pill-bg: rgba(232, 231, 231, 1);
+	--d-bg:rgba(0, 86, 119, 1);
+	--tea-color: rgba(239, 130, 11, 1);
+	--table-td:#EDEDED;
+
+
+
+
+}
+section{
+	padding:60px 0;
+}
+footer{
+	padding:80px 0;
+}
+.nav_bar{
+	background:var(--header-bg) !important;
+}
+
+
+a.nav-link {
+	color:var(--header-color);
+	font-weight:500;
+	font-family:Montserrat;
+	margin:0 10px;
+}
+a.nav-link:hover{
+	color:var(--p-text);
+}
+
+.menu_btn{
+	background:var(--green--) !important;
+	font-weight:500;
+	font-family:Montserrat;
+}
+.menu_logo::before {
+	position:absolute;
+	content:"";
+	 width: 0;
+     height: 0;
+     border-top: 14px solid var(--white-);
+      border-left: 9px solid transparent;
+	left:-4%;
+	opacity:0.6;
+	  top:85%;	
+}
+.menu_logo::after {	
+	position:absolute;
+	content:"";
+	  width: 0;
+      height: 0;
+      border-top: 14px solid var(--white-);
+      border-right: 9px solid transparent;
+	opacity:0.6;
+	  top:85%;
+	  	
+}
+.banner{
+	z-index:-1;
+}
+.carousel-indicators{
+	bottom:130px !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../images/prev.png') !important;
+}
+.carousel-control-next-icon {
+    background-image: url('../images/next.png') !important;
+}
+.circle [data-bs-target]{
+	width:10px !important;
+	height:10px !important;
+	border-radius:100% !important;
+	background-color:var(--green--) !important;
+}
+.avb_tabs{
+	position:relative;
+	top:-180px;
+}
+
+
+.view_tabs a{
+	color:var(--header-bg);
+	font-size:18px;
+	font-weight:600;
+}
+.view_tabs a:hover{
+	color:var(--header-bg);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	background:var(--red-) !important;
+}
+.nav-pills .nav-link{
+	background:var(--pill-bg) !important;
+	color:var(--black-);
+	font-size:18px;
+}
+
+table thead th{
+	text-align:center;
+	border-bottom:none;
+	padding:10px!important;
+}
+table tbody tr td{
+	color:var(--black-);
+	text-align:center;
+	padding:20px 0 !important;
+	background: var(--table-td) !important;
+	
+}
+.table>:not(caption)>*>*{
+	border-bottom:10px solid var(--white-) !important;
+}
+
+.avail h4{
+	
+	font-size:14px;
+	font-family:Montserrat;
+	font-weight:500;
+}
+.aval_num h4{
+	font-size:14px;
+	color:var(--black-);
+	font-family:Montserrat;
+	font-weight:400;
+}
+
+.trede span{
+	background:var(--d-bg);
+	padding:5px 10px;
+	border-radius:5px;
+	margin-left:15px;
+	color:var(--white-);
+	font-weight:400;
+}
+.num{
+	background:var(--d-bg);
+	border-radius:100%;
+	padding:10px 20px;
+	margin-right:10px;
+}
+.num p{
+	font-size:20px;
+	color:var(--white-);
+	margin-bottom:0px;
+}
+.dev_num h4{
+	text-align:left;
+	color:var(--black-);
+	font-size:17px;
+}
+.tab_imp{
+	color:var(--tea-color);
+	font-family:Montserrat;
+	font-weight:400;
+}
+
+/* start money heading */
+.money_heading{
+	background:var(--money-bg);
+}
+.money_heading h1{
+	text-transform:uppercase;
+	font-size:35px;
+	font-weight:800;
+	font-family:oxanium;
+}
+.money_heading p{
+	color:var(--p-text);
+	font-family: Montserrat;
+	font-size:18px;
+	text-align:center;
+	font-weight:400;
+}
+/* finish money heading */
+/* start dalmia coin */
+.dalmia_content h1{
+	text-transform:uppercase;
+	font-size:47px;
+	font-weight:800;
+	font-family:oxanium;	
+}
+.dalmia_content span{
+	color:var(--green--);
+}
+.dalmia_content p{
+	font-family: Montserrat;
+	font-size:14px;
+	font-weight:400;
+}
+/* finish dalmia coin */
+/* start it works */
+.it_heading h2{
+	text-transform:uppercase;
+	font-size:47px;
+	font-weight:800;
+	font-family:oxanium;	
+}
+.it_heading span{
+	color:var(--green--);
+}
+/* finish it works */
+/* start p2p works */
+.dal_acc{
+	background:var(--b-text);
+	padding:30px 30px;
+	max-height:116px;
+	
+}
+.dal_content{
+	font-family: Montserrat;
+	font-size:14px;
+	font-weight:400;
+}
+.buy_p2p{
+	background:url('../images/bg.png');
+	min-height:60vh;
+	background-position:center;
+	background-size:cover;
+}
+.heading_p2p h1{
+	font-family:oxanium;
+	font-size:47px;
+	color:var(--white-);
+	font-weight:800;
+	text-align:center;
+	text-transform:uppercase;
+	}
+.buy_p h1{
+	color:var(--green--);
+	font-family:oxanium;
+	font-weight:700;
+	font-size:25px;
+	text-transform:uppercase;
+}
+.order_p h1{
+	color:var(--white-);
+	font-family:oxanium;
+	font-weight:700;
+	font-size:18px;
+}
+.order_p p{
+	color:var(--white-);
+	font-family:oxanium;
+	font-weight:700;
+	font-size:18px;	
+	margin-bottom:8px;
+	margin-left:10px;	
+}
+.order_content p{
+	color:var(--p-text);
+	font-family:Montserrat;
+	font-weight:400;
+	font-size:14px;
+}
+.sell_p h1{
+	color:var(--red--);
+	font-family:oxanium;
+	font-weight:700;
+	font-size:25px;
+	text-transform:uppercase;	
+}
+/* finish p2p works  */
+/* start frequently asked */
+.heading_asked h2{
+	font-family:oxanium;
+	font-size:47px;
+	font-weight:800;
+	text-transform:uppercase;	
+}
+.heading_asked span{
+	color:var(--green--);
+}
+
+.accordion-button{
+	background:var(--p-text) !important;
+	box-shadow:none !important;
+	color:var(--black-) !important; 
+	font-weight:700 !important;
+	font-family:oxanium !important;	
+}
+.accordion-button::after {
+    background-image:\F235 !important;
+	font-weight:600;
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;  
+}
+
+.accordion-item{
+	border:none !important;
+}
+/* finish frequntly asked */
+/* start community */ 
+.community_content {
+	background:var(--money-bg);
+	border-radius:10px;
+	padding-left:25px !important;
+	
+}
+.community_content h1{
+	color:var(--white-);
+	font-family:oxanium;
+	font-weight:800;
+	font-size:40px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+.community_content p{
+	font-family:Montserrat;
+	font-weight:400;
+	color:var(--p-text);	
+}
+.community_content button{
+	font-size:14px;
+	font-family:Montserrat;
+	font-weight:600;
+	
+}
+.community_img{
+	position:absolute;
+	right:0px;
+	top:-5px;
+}
+.footer_content p{
+	font-size:18px;
+	
+}
+.community_img{
+	width:500px;
+	margin:0 auto;
+}
+.footer_widget h2 {
+	font-family:Oxanium;
+	font-size:24px;
+	font-weight:600;
+	color:var(--black--)	
+}
+.footer_link ul{
+	padding-left:0px !important;
+}
+.footer_link ul li{
+	list-style:none;
+	margin:15px 0;
+
+	
+}
+.footer_link ul li a{
+	text-decoration:none;
+	color:var(--para-white);
+	font-family:Oxanium;
+	font-size:19px;
+	
+}
+
+/* finish community */
+@media all and (min-width:992px) and (max-width:1400px) {
+	.community_content p {
+		font-size:13px;
+	}
+	.community_img{
+		width:480px
+	}
+	.footer_content p {
+    font-size: 14px;
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+	.money_heading h1{
+		font-size:32px;
+	}
+	.community_img{
+	position: inherit;
+    right: 0px;
+    top: -5px;
+	}
+	.avb_tabs{
+	position:relative;
+	top:-100px;
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+	.money_heading h1{
+		font-size:25px;
+	}
+	.carousel-indicators{
+	bottom:0px !important;
+	}
+	.money_heading p{
+		font-size:15px;
+	}
+	.dalmia_content h1{
+		font-size:32px;
+		margin-top:10px;
+	}
+	.dal_acc {
+		margin:10px 0;
+	}
+	.heading_p2p h1{
+		font-size:17px;
+	}
+	.heading_asked h2{
+		font-size:32px;
+	}
+	.community_img {
+    position: inherit;
+    right: 0px;
+    top: -5px;
+	}
+	.avb_tabs{
+	position:relative;
+	top:0px;
+	margin-bottom:20px
+}
+	
+	.community_img{
+		width:315px;
+		margin-top:10px;
+	}
+}
+
+
+

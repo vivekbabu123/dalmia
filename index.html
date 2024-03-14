@@ -1,0 +1,915 @@
+<!DOCType html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, world!</title>
+	<!-- custom css link -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<!-- bootstrap css link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  <!-- start header -->
+  <header class="menu_nav">
+  <nav class="navbar navbar-expand-lg nav_bar pb-0">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+	<div class="menu_logo bg-white position-relative">
+	<img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+	</div>
+	</a>
+    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">P2P</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="#">FAQ's</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button class="btn border-0 shadow-none text-white menu_btn px-3" type="submit">Join us</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  </header>
+  <!-- finish header -->
+  <!-- start banner carousel -->
+  <section class="banner pt-0">
+	<div class="container-fluid p-0">
+	<div class="row">
+	<div class="col-12">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators circle">
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <img src="./assets/images/banner.png" class="d-block w-100" alt="banner" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+			 <img src="./assets/images/banner.png" class="d-block w-100" alt="banner" class="img-fluid">
+			</div>
+			<div class="carousel-item">
+			  <img src="./assets/images/banner.png" class="d-block w-100" alt="banner" class="img-fluid">
+			</div>
+		  </div>
+		 
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		  </button>
+	</div>
+	</div>
+	</div>
+	</div>
+  </section>
+  <!-- finish banner carousel -->
+  <!-- start tabs and table -->
+  <section class="tabs_table p-0">
+	<div class="container">
+		<div class="row shadow p-md-4 p-0 bg-white rounded avb_tabs">
+			<div class="col-12">
+				<div class="buy_tabs d-flex justify-content-between">
+				<div class="seels_tabs">
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					  <li class="nav-item" role="presentation">
+						<button class="nav-link active rounded-0 " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-Buy" type="button" role="tab" aria-controls="pills-home" aria-selected="true">BUY</button>
+					  </li>
+					  <li class="nav-item" role="presentation">
+						<button class="nav-link rounded-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-sell" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SELL</button>
+					  </li>
+					</ul>
+				</div>
+				<div class="view_tabs me-md-5 me-0">
+				<a href="">view more...</a>
+				</div>
+				</div>
+			</div>
+		<div class="col-12">
+			<div class="table_btc">
+				<div class="tab-content" id="pills-tabContent">
+					  <div class="tab-pane fade show active" id="pills-Buy" role="tabpanel" aria-labelledby="pills-home-tab">
+					  <div class="table_buy table-responsive">
+					  <table class="table text-nowrap align-middle">
+						  <thead>
+							<tr>
+							  <th>
+							  <div class="adv">
+							  Advertisers
+							  </div>
+							  <div class="cople_rate text-secondary fw-normal">
+							   (completion rate)
+							   </div>
+							   </th>
+							  <th>
+							  <div class="adv">
+							  Price
+							  </div>
+							  <div class="cople_rate text-secondary fw-normal">
+								(Highest to lowest)
+							   </div>
+							   </th>
+							  <th>Limit / available</th>
+							  <th>Payment</th>
+							  <th>
+							  <div class="trede">
+							  trade<span>0.fees</span>
+							  </div>
+							   </th>
+							</tr>
+						  </thead>
+						  <tbody>
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+							
+							 
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>  
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+						
+							  
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+						  </tbody>   
+					</table>
+					</div>
+					  
+					  </div>
+					  <div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-profile-tab">
+					    <div class="table_buy">
+					  <table class="table">
+						  <thead>
+							<tr>
+							  <th>
+							  <div class="adv">
+							  Advertisers
+							  </div>
+							  <div class="cople_rate text-secondary fw-normal">
+							   (completion rate)
+							   </div>
+							   </th>
+							  <th>
+							  <div class="adv">
+							  Price
+							  </div>
+							  <div class="cople_rate text-secondary fw-normal">
+								(Highest to lowest)
+							   </div>
+							   </th>
+							  <th>Limit / available</th>
+							  <th>Payment</th>
+							  <th>
+							  <div class="trede">
+							  trade<span>0.fees</span>
+							  </div>
+							   </th>
+							</tr>
+						  </thead>
+						  <tbody>
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+							
+							 
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+						
+							  
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+						
+							  
+						  <tr>
+							  <td>
+							  <div class="devul d-flex align-items-center ms-4">
+							  <div class="num">
+							  <p>D</p>
+							  </div>
+							  <div class="dev_num ">
+								<h4>DEVUL47</h4>
+								<p class="mb-0">54 orders | 98.18% completion</p>
+							  </div>
+							  </div>
+							  </td>
+							  <td>83.06 INR</td>
+								<td>
+								<div class="main_avai d-flex">
+								<div class="avail">
+								<h4>Available <br> market</h4>
+								</div>
+								<div class="aval_num ms-3">
+								<h4>190.00 DALMIA <br> 15.700.00 - 15,783</h4>
+								</div>
+								</div>
+								</td>
+							  <td>
+							  <div class="tab_imp">
+							  IMPS
+							  </div>
+							  </td>
+							  <td>
+							  <button class="btn btn-danger shadow-none">SELL DALMIA</button>
+							  </td>
+							</tr>
+						  </tbody>   
+					</table>
+					</div>
+					  </div>	 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </section>
+    <!-- finish tabs and table -->
+  
+  <!-- start p2p page -->
+  <section class="Money-p2p pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="money_heading p-md-5 p-2 rounded-3">
+					<h1 class="text-white text-center">Make Your Money Go Further With <br> Our P2P!</h1>
+					<p>Join Dalmia Shakti Community today to witness your favorites growing. Effortlessly trade with no hustle!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  </section>
+  <!-- finish p2p page -->
+  <!-- start dalmia coin -->
+  <section class="dalmia-coin">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-12 col-md-6 col-lg-6 col-xl-6">
+				<div class="dalmia_img">
+				<img src="./assets/images/girl_coin.png" alt="img-fluid" class="img-fluid">
+				</div>
+			
+			</div>
+			<div class="col-12 col-md-6 col-lg-6 col-xl-6">
+				<div class="dalmia_content">
+				<h1>What are <span> Dalmia <br> Coins? </span></h1>
+				<p>As a reward for every purchase made on DalmiaShakti, Dalmia customers get coin rewards, which can be redeemed for a variety of benefits.</p>
+				<p>Dalmia likewise rewards customers for their purchases on partner apps and websites. For every successful order you place with Dalmia, you will earn coins depending on the amount purchased.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  </section>
+  <!-- finish dalmia coin -->
+  <!-- start it work -->
+  <section class="it_work">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="it_heading text-center">
+					<h2>How does it <span> works ?</span></h2>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row my-md-5 my-0">
+		<div class="col-12 col-md-4 col-lg-4 col-xl-4">
+			<div class="dal_acc d-flex justify-content-around align-items-center">
+				<div class="dal_img">
+				<img src="./assets/images/right_arrow.png" alt="images" class="img-fluid">
+				</div>
+				<div class="dal_content ms-3 pt-4">
+				<p>Your Dalmia account can be accessed by logging in</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-4 col-xl-4">
+			<div class="dal_acc d-flex align-items-center">
+				<div class="dal_img">
+				<img src="./assets/images/right_upper.png" alt="images" class="img-fluid">
+				</div>
+				<div class="dal_content ms-3 pt-4">
+				<p>Go to the coins zone by clicking it</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-4 col-xl-4">
+		<div class="dal_acc d-flex justify-content-around align-items-center">
+				<div class="dal_img">
+				<img src="./assets/images/paper.png" alt="images" class="img-fluid">
+				</div>
+				<div class="dal_content ms-3 pt-4">
+				<p>Check out the products by clicking explore now</p>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="row justify-content-center">
+		<div class="col-12 col-md-4 col-lg-4 col-xl-4">
+			<div class="dal_acc d-flex justify-content-around align-items-center">
+				<div class="dal_img">
+				<img src="./assets/images/shop_cart.png" alt="images" class="img-fluid">
+				</div>
+				<div class="dal_content ms-3 pt-4">
+				<p>Choose the product you would like to purchase</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-4 col-xl-4">
+		<div class="dal_acc d-flex justify-content-around align-items-center">
+				<div class="dal_img">
+				<img src="./assets/images/hand_bitcoin.png" alt="images" class="img-fluid">
+				</div>
+				<div class="dal_content ms-3 pt-4">
+				<p>Check your account's coins to ensure you have enough</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+  </section>
+  <!-- finish it work -->
+  <!-- start buy and sell -->
+	<section class="buy_p2p mt-5">
+		<div class="container">
+			<div class="row">
+			<div class="col-12">
+			<div class="heading_p2p">
+			<h1>How does Dalmia P2P Work for <br> Buyer and Seller?</h1>
+			</div>
+			</div>
+			</div>
+			<div class="row align-items-center mt-4">
+				<div class="col-12 col-md-4 col-lg-4 col-xl-4">	
+					<div class="buy_p text-center">	
+					<h1>For buyer:</h1>
+					</div>
+					<div class="order_p d-flex align-items-center">
+					<h1>1.</h1>
+					<p>Order now</p>
+					</div>
+					<div class="order_content">
+					<p>A seller will be auto-matched with you within seconds</p>
+					</div>
+					<div class="order_p d-flex align-items-center mt-5">
+						<h1>2.</h1>
+						<p>Direct payment to the seller</p>
+					</div>
+					<div class="order_content">
+						<p>The seller will confirm your payment</p>
+					</div>
+				
+				
+				</div>
+				<div class="col-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="man_p2p">
+						<img src="./assets/images/two_man.png" alt="images" class="img-fluid">
+				</div>
+				</div>
+				<div class="col-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="sell_p text-center">	
+					<h1>For seller:</h1>
+				</div>
+				<div class="order_p d-flex align-items-center">
+					<h1>1.</h1>
+					<p>Place an Order</p>
+				</div>
+				<div class="order_content">
+					<p>A buyer will be auto-matched with you within seconds</p>
+				</div>
+				<div class="order_p d-flex align-items-center mt-5">
+					<h1>2.</h1>
+					<p>Confirm receiving the payment</p>
+				</div>
+				<div class="order_content">
+					<p>Only after you acknowledge receiving the payment will Dalmia transfer the INR to the buyer.</p>
+				</div>
+			
+			</div>
+				
+			</div>
+		</div>
+	</section>
+  <!-- finish buy and sell -->
+  <!-- start asked Question -->
+  <section class="fre_asked">
+	<div class="container">
+		<div class="row">
+		<div class="col-12">
+			<div class="heading_asked">
+			<h2>Frequently asked <span> questions </span></h2>
+			</div>
+		</div>
+		<div class="col-12 mt-5">
+			<div class="asked_accordian">
+						<div class="accordion" id="accordionPanelsStayOpenExample">
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+				  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+					1.When will Dalmia coins be credited to my Account?
+				  </button>
+				</h2>
+				<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+				  <div class="accordion-body">
+					<p>Upon completing the return policy for the products, the Dalmia coins are credited to your account. Coins are credited after flight and hotel bookings have been made.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+					2. What is the validity of SuperCoins? 
+				  </button>
+				</h2>
+				<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+				  <div class="accordion-body">
+					<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				  </div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+					3. How do I redeem my Dalmia Coins? 
+				  </button>
+				</h2>
+				<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+				  <div class="accordion-body">
+					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				  </div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="panelsStayOpen-headingfour">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+					4. Are the coins credited deducted if I return or cancel an item? 
+				  </button>
+				</h2>
+				<div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+				  <div class="accordion-body">
+					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				  </div>
+				</div>
+			  </div>
+			</div>
+						</div>
+					</div>
+					</div>
+				</div>
+  </section>
+  <!-- finish asked question -->
+  <!-- start our community -->
+  <section class="community">
+		<div class="container">
+			<div class="row position-relative">
+				<div class="col-12">
+					<div class="community_content p-md-4 p-3">
+						<h1>Join our community</h1>
+						<p>With Dalmia Shakti, customers get cashback on every purchase across multiple <br> categories on the platform, making it the leading e-commerce platform in India. <br> We have over 5000 products in our catalog, so you can find anything you need. We <br> have groceries, personal care, healthcare, baby care, wellness, fashion, electronics,<br> packaged food items, and so much more.</p>
+						<button class="btn btn-success">join Us</button>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="community_img">
+					<img src="./assets/images/ipad.png" alt="images" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+  </section>
+  <!-- finish our community -->
+  <!-- start footer -->
+  <footer class="footer_menu">
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-12 col-md-6 col-lg-6 col-xl-6">
+				<div class="footer_logo ">
+					<img src="./assets/images/logo.png" alt="images" class="img-fluid">
+				</div>
+				<div class="footer_content mt-3">
+				<p>With Dalmia Shakti, customers get cashback on every purchase across <br>
+				multiple categories on the platform, making it the leading e-<br> 
+				commerce platform in India. We have over 5000 products in our <br> 
+				catalog, so you can find anything you need. We have groceries, <br>
+				personal care, healthcare, baby care, wellness, fashion, electronics,<br>
+				packaged food items, and so much more.</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-2 col-xl-2">
+			<div class="footer_widget">
+					<h2>About us</h2>
+					<div class="footer_link">
+					<ul>
+					<li><a href="#">Text 1</a>
+					<li><a href="#">Text 2</a>
+					<li><a href="#">Text 3</a>
+					<li><a href="#">Text 4</a>
+					<li><a href="#">Text 5</a>
+					<li><a href="#">Text 6</a>
+					<li><a href="#">Text 7</a>
+					</ul>
+				</div>
+				</div>
+			
+			</div>
+			<div class="col-12 col-md-6 col-lg-2 col-xl-2">
+			<div class="footer_widget">
+					<h2>PRODUCTS</h2>
+					<div class="footer_link">
+					<ul>
+					<li><a href="#">Text 1</a>
+					<li><a href="#">Text 2</a>
+					<li><a href="#">Text 3</a>
+					<li><a href="#">Text 4</a>
+					<li><a href="#">Text 5</a>
+					<li><a href="#">Text 6</a>
+					<li><a href="#">Text 7</a>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-2 col-xl-2">
+				<div class="footer_widget">
+					<h2>Service</h2>
+					<div class="footer_link">
+					<ul>
+					<li><a href="#">Service 1</a>
+					<li><a href="#">Service 2</a>
+					<li><a href="#">Service 3</a>
+					<li><a href="#">Service 4</a>
+					<li><a href="#">Service 5</a>
+					<li><a href="#">Service 6</a>
+					<li><a href="#">Service 7</a>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </footer>
+  <!-- finish footer -->
+  
+  
+   
+
+    <!-- bootstrap bundle link -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
